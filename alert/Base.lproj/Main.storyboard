@@ -31,20 +31,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lEC-4S-sDb">
+                                <rect key="frame" x="20" y="626" width="374" height="166"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lEC-4S-sDb" firstAttribute="top" secondItem="s73-mK-i9y" secondAttribute="bottom" constant="8" id="5lf-fT-cWz"/>
                             <constraint firstItem="2Fb-Q9-uPb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6bD-rz-FfN"/>
                             <constraint firstItem="2Fb-Q9-uPb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ADY-7v-Sza"/>
                             <constraint firstItem="s73-mK-i9y" firstAttribute="leading" secondItem="2Fb-Q9-uPb" secondAttribute="trailing" constant="-374" id="Ahx-7A-Bzm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lEC-4S-sDb" secondAttribute="trailing" constant="20" id="Dwl-9h-icx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s73-mK-i9y" secondAttribute="bottom" constant="244" id="OAm-Zb-SXo"/>
                             <constraint firstItem="s73-mK-i9y" firstAttribute="trailing" secondItem="2Fb-Q9-uPb" secondAttribute="trailing" id="au0-dS-t6E"/>
+                            <constraint firstItem="lEC-4S-sDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c2W-aD-aBc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lEC-4S-sDb" secondAttribute="bottom" constant="70" id="c2h-Hv-rF6"/>
                             <constraint firstItem="2Fb-Q9-uPb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dkt-83-2l7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="lblYouCancelled" destination="s73-mK-i9y" id="S1F-bj-fh3"/>
+                        <outlet property="txtvYouSaid" destination="lEC-4S-sDb" id="Hiu-Wf-R8D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
